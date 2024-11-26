@@ -1,0 +1,26 @@
+name: Model_Recognize
+
+dataset:
+  train_labels: data_1/train.tsv
+  test_labels: data_1/test.tsv
+  train_path: 'data_1/train'
+  test_path: 'data_1/test'
+  set_chars: ' №!?"%(),-./:;0123456789абвгдежзийклмнопрстуфхцчшщъыьэюяё'
+  max_len: 16
+  imsize_h: 256
+  imsize_w: 128
+  batch_size: 64
+  shuffle: True
+  
+network:
+  arch: CRNN_v4a
+  weights: 'Model_Recognize/CRNN_v4a_epoch_25_2024-11-25_19:12:59_weights.pt'
+  options: 'Model_Recognize/CRNN_v4a_epoch_25_2024-11-25_19:12:59_results.pkl'
+  device: 'cuda'
+
+train:
+  device: 'cuda' 
+  epochs: 0
+  validate: True
+  plot: False
+  see_test_predict: False
