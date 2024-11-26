@@ -59,6 +59,9 @@ OCR-Handwriting-Recognition
 ### 4. Тестирование модели:
 - Используйте ноутбук `work.ipynb` для оценки качества модели и выполнения предсказаний.
 
+### Ссылки:
+- Dataset https://www.kaggle.com/datasets/constantinwerner/cyrillic-handwriting-dataset
+
 ---
 
 ## Пример использования
